@@ -4,17 +4,6 @@ body {
 }
 
 
-.table {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
- td, #TabClient th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
 tr:nth-child(even){background-color: #2196F3;}
 
  tr:nth-child(odd){background-color: #4be1ff;}
@@ -22,9 +11,6 @@ tr:nth-child(even){background-color: #2196F3;}
 tr:hover {background-color: #f83333;}
 
  th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
     background-color: #4CAF50;
     color: white;
 }

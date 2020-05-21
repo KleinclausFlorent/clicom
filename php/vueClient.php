@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Clients</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styleUser.css" id="stylesheet">
+    <link rel="stylesheet" href="../css/stylerManagerClient.css">
     <script src="../js/Set-css_script.js"></script>
 </head>
 <body>
@@ -11,9 +13,10 @@
     <h1>Clients</h1>
     <p><a href="Consultation.php">Accèder aux menu</a></p>
     <div id="admin" class="admin">
-        <h2>Tableau Clients</h2>
-            <?php afficheAll_Client(); ?>
-
+        <h2 class="display-4 py-2 text-center">Tableau Clients</h2>
+            <div class="container ">
+                <?php afficheAll_Client(); ?>
+            </div>
         <h2>Recherche Client</h2>
             <?php buildFormSeek_Client(); ?>
             <?php
@@ -62,4 +65,9 @@
             }
             ?>
     </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>

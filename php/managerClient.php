@@ -16,14 +16,16 @@ function afficheAll_Client(){
         echo '
 												<div id="TabClient" class="table">
 													<table>
-														<tr>
-															<th>NCLI</th>
-															<th>NOM</th>
-															<th>ADRESSE</th>
-															<th>LOCALITE</th>
-															<th>CAT</th>
-															<th>COMPTE</th>
-														</tr>';
+													    <thead>
+                                                            <tr>
+                                                                <th>NCLI</th>
+                                                                <th>NOM</th>
+                                                                <th>ADRESSE</th>
+                                                                <th>LOCALITE</th>
+                                                                <th>CAT</th>
+                                                                <th>COMPTE</th>
+                                                            </tr>
+                                                        </thead>';
         foreach ($connexion->query($sql) as $row){
             $mClient = array(
                         'Ncli' => $row['NCLI'],
